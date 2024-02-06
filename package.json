@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del-cli public",
+    "build": "npm run clean && eleventy",
+    "serve": "npm run clean && eleventy --serve"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "del-cli": "^5.1.0"
   }
 }
