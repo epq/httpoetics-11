@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+:root {
+  --color-bg: lightsalmon;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027") format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437") format("opentype");
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+body {
+  /*   font-family: HK Grotesk; */
+  background-color: var(--color-bg);
+  font-family: "Comic Neue", cursive;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: fuchsia;
+}
+
+/* Style for larger devices */
+.gallery img {
+  width: 500px;
+  height: auto;
+  display: flex;
+  margin: 2em;
+}
+
+/* Style for mobile devices */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+.protec {
+  text-align: center;
+}

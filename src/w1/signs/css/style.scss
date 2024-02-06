@@ -1,0 +1,183 @@
+// SASS VARIABLES
+$font:
+  Impact,
+  Haettenschweiler,
+  Franklin Gothic Bold,
+  Charcoal,
+  Helvetica Inserat,
+  Bitstream Vera Sans Bold,
+  Arial Black;
+
+$dark: #010101;
+$light: #fefefe;
+$grey: #bbbbbb;
+$red: #ff0000;
+$orange: #ff7700;
+$yellow: #ffff00;
+$green: #00ff00;
+$cyan: #00ffff;
+$blue: #0000ff;
+$purple: #9400d3;
+$magenta: #ff00ff;
+
+$main: $light;
+$background: $dark;
+$primary: $orange;
+$secondary: $grey;
+$header: $font;
+
+// RESETS
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// GLOBAL STYLES
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $main;
+  background: $background;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header;
+  font-weight: normal;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  border-bottom: 6px solid $primary;
+  color: $main;
+  transition: background 0.2s linear;
+}
+a:hover {
+  background: $primary;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+// COLOURS
+.orange {
+  color: $orange;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.white {
+  color: $light;
+}
+
+// SIZES
+.medium {
+  font-size: 2rem;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.bigger {
+  font-size: 4rem;
+}
+
+// SIGN STYLES
+.signs {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%; // Set the initial width to 100% for mobile screens
+
+  @media (min-width: 800px) { // Adjust this value as needed
+    max-width: 70%;
+    min-width: 800px;
+    padding: 1rem; // Increase the padding on larger screens
+  }
+
+  .sign {
+    padding: 0.5rem;
+    font-family: $header;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%; // This will make the .sign divs fill the full width of the .signs container
+
+    @media (min-width: 800px) { // Adjust this value as needed
+      padding: 1rem; // Increase the padding on larger screens
+    }
+
+    .sign-text:nth-child(1) {
+      color: $orange;
+    }
+  }
+}
+
+.sign:nth-child(even) {
+  background-color: #4c4c4c;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.5); /* larger */
+  }
+  100% {
+    transform: scale(1); /* Back to original size */
+  }
+}
+
+.pulsating-text {
+  animation: pulsate 1.5s infinite ease-in-out;
+  display: inline-block; /* or block */
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes spinY {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateY(360deg);
+  }
+}
+
+.spinning-y-axis {
+  animation: spinY 5s infinite linear;
+  display: inline-block;
+  color: white;
+  margin: 0 auto; 
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+.fire-divider {
+  text-align: center;
+}
