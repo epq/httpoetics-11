@@ -3,7 +3,7 @@ name: Build and Deploy Eleventy Site
 on:
   push:
     branches:
-      - master # Replace 'main' with 'master' if your default branch is named 'master'
+      - main # Replace 'main' with 'master' if your default branch is named 'master'
 
 jobs:
   build_and_deploy:
