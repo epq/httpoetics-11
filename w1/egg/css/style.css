@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  position: relative;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.hamster {
+  font-family: "Space Grotesk", Helvetica, sans-serif;
+  padding: 2rem;
+  min-height: 120vh;
+  width: 100%;
+  background-color: #fefefe;
+}
+.hamster h1, .hamster h2, .hamster h3 {
+  text-align: center;
+  color: #000000;
+}
+.hamster h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+.hamster a {
+  font-weight: bold;
+}
+.hamster a:link,
+.hamster a:visited {
+  text-decoration: none;
+  border-bottom: 6px solid #1bb40d;
+  color: #010101;
+  transition: background 0.2s linear;
+}
+.hamster a:hover {
+  background: #1bb40d;
+}
+.hamster article {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#p5-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* change padding for mobile */
+@media screen and (max-width: 600px) {
+  .hamster {
+    padding: 1rem;
+  }
+}
+.egg-hold {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.gerbil {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* height: 100%; */
+  min-height: 100vh;
+  background: #000000;
+  transform: translateY(100%);
+  transition: transform 1s;
+  will-change: transform;
+  /* color: #ffffff; */
+  color: limegreen;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  background-image: url("../../../assets/animatedstars.gif");
+}
+
+.gerbil.show {
+  transform: translateY(0);
+}
+
+.gerbil h1,
+.gerbil h2,
+.gerbil h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  /* background-color: red; */
+  color: blue;
+}
+
+.egg-legs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.conspiracy-flame {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#conspiracy-intro {
+  /* italic */
+  font-style: italic;
+  color: #ffffff;
+}
+
+#hatch-truth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#hatch-truth h3,
+#hatch-truth img {
+  display: inline;
+}
+
+.chicken-run {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

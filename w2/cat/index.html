@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="css/style.css">
+  <title>Cats's Collection</title>
+</head>
+
+<body>
+  <h1>Collector</h1>
+
+  <div class="navigator">
+    <button class="up btn"><svg xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+              d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+      </svg></button>
+    <div class="row">
+      <button class="left btn"><svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+        </svg></button>
+      <button class="center btn"><svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+        </svg></button>
+      <button class="right btn"><svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+        </svg></button>
+    </div>
+    <button class="down btn"><svg xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+      </svg></button>
+  </div>
+
+  <div class="inventory">
+    <div class="open">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="inventory-contents">
+      <div class="inventory-label">Drag items here to add them to your inventory!</div>
+      <ul id="inventory-items">
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <div class="welcome"
+       id="welcome">
+    Welcome!
+    <br>
+    This is a website for cats.
+    <br>
+
+    <a href="#dini-div">Click here to go to Dini</a>
+  </div>
+
+
+  <div id="dini-div"
+       style="position: absolute; left: 2000px; top: 400px; width: 200px;">
+       <img class="dini" src="../../assets/images/yuyu_head.png" alt="Dini the cat">
+      <audio data-key="dini-sound" src="../../assets/audio/dinistairs.mp3"></audio>
+      
+    This is Dini. Click her head to listen. <a href="#yuanyuan-div">Click here to go to Yuanyuan</a>
+  </div>
+
+  <div id="yuanyuan-div"
+       style="position: absolute; left: 3000px; top: 800px; width: 600px;">
+       <img class="yy" src="../../assets/images/yunnie_head.png" alt="Yuanyuan the cat">
+       <audio data-key="yy-sound" src="../../assets/audio/yunyunstairs2.mp3"></audio>
+    This is Yuanyuan. Click her head to listen. <a href="#welcome">Click here to go to go back to the start</a>
+  </div>
+
+  <!-- <div id="orange-worm"
+     style="position: absolute; left: 100px; top: 1200px; width: 600px;">
+  <img src="/assets/woas_orange.png"
+       alt="Orange worm"
+       style="width: 100px;">
+</div> -->
+
+  <!-- <div id="green-worm"
+       style="position: absolute; left: 100px; top: 1400px; ">
+    <img src="/assets/woas_green.png"
+         alt="Green worm"
+         style="width:100px;"> -->
+
+
+    <!-- <img src="/assets/long_dini.png"
+         alt="Long Dini the cat"
+         class="long" id="long_dini" style="position: absolute; bottom: 0"/>
+    <img src="/assets/long_yuan.png"
+         alt="Long Yuanyuan the cat"
+         class="long_yuan long" /> -->
+
+
+    <!-- <div class="navigator">
+    <div class="up">UP</div>
+    <div class="left">LEFT</div>
+    <div class="right">RIGHT</div>
+    <div class="down">DOWN</div>
+  </div> -->
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

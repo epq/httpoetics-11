@@ -1,0 +1,121 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+#scary-button {
+  font-family: 'DM Sans', Helvetica, sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  background-color: #fefefe;
+  color: #010101;
+  border: 1.5px solid #010101;
+  -webkit-box-shadow: 3px 3px #010101;
+          box-shadow: 3px 3px #010101;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+#scary-button:active {
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  -webkit-box-shadow: 1px 1px;
+          box-shadow: 1px 1px;
+}
+
+#scary-button:hover {
+  -webkit-animation:rainbow 3s infinite;
+  -ms-animation:rainbow 3s infinite;
+  -o-animation:rainbow 3s infinite;
+  animation:rainbow 3s infinite;
+  }
+  @-webkit-keyframes rainbow {
+  0% {background-color: #ff0000;}
+  10% {background-color: #ff8000;}
+  20% {background-color: #ffff00;}
+  30% {background-color: #80ff00;}
+  40% {background-color: #00ff00;}
+  50% {background-color: #00ff80;}
+  60% {background-color: #00ffff;}
+  70% {background-color: #0080ff;}
+  80% {background-color: #0000ff;}
+  90% {background-color: #8000ff;}
+  100% {background-color: #ff0080;}
+  }
+  @-ms-keyframes rainbow {
+  0% {background-color: #ff0000;}
+  10% {background-color: #ff8000;}
+  20% {background-color: #ffff00;}
+  30% {background-color: #80ff00;}
+  40% {background-color: #00ff00;}
+  50% {background-color: #00ff80;}
+  60% {background-color: #00ffff;}
+  70% {background-color: #0080ff;}
+  80% {background-color: #0000ff;}
+  90% {background-color: #8000ff;}
+  100% {background-color: #ff0080;}
+  }
+  @-o-keyframes rainbow {
+  0% {background-color: #ff0000;}
+  10% {background-color: #ff8000;}
+  20% {background-color: #ffff00;}
+  30% {background-color: #80ff00;}
+  40% {background-color: #00ff00;}
+  50% {background-color: #00ff80;}
+  60% {background-color: #00ffff;}
+  70% {background-color: #0080ff;}
+  80% {background-color: #0000ff;}
+  90% {background-color: #8000ff;}
+  100% {background-color: #ff0080;}
+  }
+  @keyframes rainbow {
+  0% {background-color: #ff0000;}
+  10% {background-color: #ff8000;}
+  20% {background-color: #ffff00;}
+  30% {background-color: #80ff00;}
+  40% {background-color: #00ff00;}
+  50% {background-color: #00ff80;}
+  60% {background-color: #00ffff;}
+  70% {background-color: #0080ff;}
+  80% {background-color: #0000ff;}
+  90% {background-color: #8000ff;}
+  100% {background-color: #ff0080;}
+  }
+  
+
+#zombo-header {
+  margin: 1rem;
+}
