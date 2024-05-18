@@ -19,16 +19,22 @@ module.exports = function(eleventyConfig) {
       return collectionApi.getFilteredByGlob(`src/w${i}/**/*.{html,md}`);
     });
   }
+
+eleventyConfig.addFilter("prependPath", function(value) {
+  return `/httpoetics${value}`;
+});
   
   // Return the configuration object
   return {
+    url: "https://jordanne.ca",
+    pathprefix: "/httpoetics",
     passthroughFileCopy: true,
     markdownTemplateEngine: "njk", // use Nunjucks for Markdown files
     htmlTemplateEngine: "njk", // use Nunjucks for HTML files
     templateFormats: ["md", "njk", "html"], // use Nunjucks for .md, .njk, and .html files
     dir: {
       input: "src",
-      output: "public"
+      output: "../httpoetics"
     }
   };
 };

@@ -16,10 +16,10 @@ Here are a few things I'm working on.
     <ul class="project-grid">
     {% for project in collections[week] -%}
       <li class="project-item">
-        <a href="{{ project.url }}">
+        <a href="{{ project.url | prependPath }}">
           {% if project.data.image -%}
             <div class="project-image">
-              <img src="/assets/thumbs/{{ project.data.image }}" alt="{{ project.data.title }}">
+              <img src="assets/thumbs/{{ project.data.image }}" alt="{{ project.data.title }}">
             </div>
           {%- endif %}
           <h3>{{ project.data.title }}</h3>

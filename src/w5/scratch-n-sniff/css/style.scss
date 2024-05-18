@@ -69,8 +69,35 @@ a:hover {
   background: $primary;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+  // cursor: none;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  pointer-events: none;
+  user-select: none;
+  // cursor: none;
+}
+
 p {
   margin: 0 0 1rem 0;
   line-height: 1.5;
   font-size: 1rem;
+}
+
+#defaultCanvas0 {
+  position: fixed;
+}
+
+#canvasContainer {
+  position: fixed;
+  z-index: 5;
+  // cursor: none;
 }

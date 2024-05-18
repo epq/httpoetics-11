@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "del-cli public",
-    "build": "npm run clean && eleventy",
-    "serve": "npm run clean && eleventy --serve"
+    "build": "npm run && eleventy",
+    "serve": "npm run && eleventy --serve --pathprefix=httpoetics"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Space Grotesk", Helvetica, sans-serif;
+  color: #010101;
+  background-color: #fefefe;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ee2299;
+}
+
+a:visited {
+  color: #f581c5;
+}
+
+a:hover {
+  color: #ff7700;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+span {
+  display: inline-block;
+  transition: transform 2000ms ease 0s;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Space Grotesk", Helvetica, sans-serif;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+button {
+  -webkit-box-shadow: transparent -8px 4px 20px;
+  box-shadow: transparent -8px 4px 20px;
+  border-radius: 4px;
+  border: 1px solid #010101;
+  -webkit-transition: background-color 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, background-color 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, background-color 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  background-color: #66ccff;
+  color: #010101;
+}
+
+button:hover {
+  -webkit-box-shadow: -8px 4px 20px #66ccff;
+  box-shadow: -8px 4px 20px #66ccff;
+}
+
+button:active {
+  background-color: #33bbff;
+}
